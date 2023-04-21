@@ -242,3 +242,61 @@ img {
     transform: translateY(0);
   }
 }
+
+/*============== BUTTON ===============*/
+
+.button {
+  display: inline-block;
+  background-color: var(--black-color);
+  color: #fff;
+  padding: 1rem 1.75rem;
+  border-radius: 0.25rem;
+  font-size: var(--normal-font-size);
+  text-transform: uppercase;
+}
+
+/*============== SPECIALTY ===============*/
+
+.specialty {
+  &__container {
+  }
+
+  &__box {
+  }
+
+  &__button {
+    margin-left: 1.25rem;
+  }
+
+  &__category {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 200px;
+    justify-content: center;
+    row-gap: 2.5rem;
+  }
+
+  &__group {
+    text-align: center;
+    &:hover .specialty__img {
+      transform: translateY(-0.25rem);
+    }
+  }
+
+  &__img {
+    width: 60px;
+    margin-bottom: 1rem;
+    transition: 0.4s;
+  }
+
+  &__title {
+    font-size: var(--h2-font-size);
+  }
+
+  &__description {
+  }
+}
+.section {
+  &__title {
+  }
+}
