@@ -1,4 +1,5 @@
 //= components/scrollHeader.js
+//= components/mixitup.min.js
 
 /* ================ SHOW MENU ==================*/
 
@@ -26,3 +27,29 @@ function linkAction() {
 }
 
 navLink.forEach((item) => item.addEventListener("click", linkAction));
+
+/* ================ MIXITUP FILTER PRODUCTS ==================*/
+
+let mixerProducts = mixitup(".products__content", {
+  selectors: {
+    target: ".products__card",
+  },
+  animation: {
+    duration: 300,
+  },
+});
+
+/*  DEFAULT FILTER PRODUCTS */
+
+mixerProducts.filter(".delicacies");
+
+/*  LINK FILTER PRODUCTS */
+
+const linkProducts = document.querySelectorAll(".products__item");
+
+function activeProducts() {
+  linkProducts.forEach(p => p.classList.remove('active-product'))
+  this.classList.add('active-product')
+}
+
+linkProducts.forEach(p => p.addEventListener('click', activeProducts))

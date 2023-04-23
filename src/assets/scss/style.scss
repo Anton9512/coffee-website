@@ -258,16 +258,6 @@ img {
 /*============== SPECIALTY ===============*/
 
 .specialty {
-  &__container {
-  }
-
-  &__box {
-  }
-
-  &__button {
-    margin-left: 1.25rem;
-  }
-
   &__category {
     margin-top: 4rem;
     display: grid;
@@ -282,21 +272,101 @@ img {
       transform: translateY(-0.25rem);
     }
   }
+}
+
+/*============== PRODUCTS ===============*/
+
+.products {
+  &__container {
+  }
+
+  &__filters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 2rem;
+    margin-bottom: 3.5rem;
+  }
+
+  &__item {
+    cursor: pointer;
+  }
+
+  &__line {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 40px;
+      background-color: var(--text-color-light);
+      right: 0;
+      top: 0;
+      margin: auto 0;
+    }
+  }
+
+  &__title {
+    font-size: var(--h3-font--size);
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+  }
+
+  &__stock {
+    font-size: var(-small-font-size);
+  }
+
+  &__content {
+    grid-template-columns: 200px;
+    justify-content: center;
+  }
+
+  &__card {
+    background-color: var(--container-color);
+    border-radius: 0.5rem;
+    &:hover .products__img {
+      transform: translateY(-0.25rem);
+    }
+  }
+
+  &__shape {
+    background-color: var(--card-color);
+    border-radius: 0.5rem 0.5rem 0 0;
+    text-align: center;
+    padding: 0.25rem 0;
+  }
 
   &__img {
-    width: 60px;
-    margin-bottom: 1rem;
+    width: 150px;
     transition: 0.4s;
   }
 
-  &__title {
+  &__data {
+    padding: 1rem 0 1.25rem 1rem;
+    position: relative;
+  }
+
+  &__price {
     font-size: var(--h2-font-size);
   }
 
-  &__description {
+  &__name {
+    font-size: var(--normal-font-size);
+  }
+
+  &__button {
+    border-radius: 50%;
+    padding: 0.625rem;
+    display: inline-flex;
+    font-size: 1.25rem;
+    position: absolute;
+    right: 1rem;
+    top: -1.25rem;
+    box-shadow: 0 4px 12px hsla(206, 4%, 4%, 0.2);
   }
 }
-.section {
-  &__title {
-  }
+
+/* Active link products */
+
+.active-product .products__title {
+  color: var(--title-color);
 }
