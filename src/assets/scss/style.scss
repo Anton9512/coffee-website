@@ -490,9 +490,6 @@ img {
     row-gap: 3rem;
   }
 
-  &__card {
-  }
-
   &__image {
     position: relative;
     margin-bottom: 1.5rem;
@@ -523,9 +520,6 @@ img {
     }
   }
 
-  &__data {
-  }
-
   &__title {
     font-size: var(--h2-font-size);
     margin-bottom: 0.75rem;
@@ -553,5 +547,98 @@ img {
     span {
       font-size: var(--small-font-size);
     }
+  }
+}
+
+/*============== FOOTER ===============*/
+
+.footer {
+  background-color: var(--black-color);
+  padding: 4rem 0 2.5rem;
+
+  &__title {
+    color: #fff;
+    font-size: var(--h1-font-size);
+    margin-bottom: 2rem;
+  }
+
+  &__content {
+    row-gap: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--text-color);
+  }
+
+  &__description {
+    margin-bottom: 0.75rem;
+  }
+
+  &__newsletter {
+    display: flex;
+    column-gap: 0.5rem;
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    padding: 1.25rem 1rem;
+    border-radius: 0.25rem;
+    width: 70%;
+    color: var(--text-color);
+  }
+
+  &__button {
+    padding: 0.75rem;
+    font-size: 2rem;
+    border-radius: 0.25rem;
+    display: inline-flex;
+    background-color: var(--first-color);
+    i {
+      transform: rotate(-30deg);
+      transition: 0.4s;
+    }
+
+    &:hover i {
+      transform: rotate(-30deg) translate(0.25rem);
+    }
+  }
+
+  &__subtitle {
+    color: #fff;
+    font-size: var(--h2-font-size);
+    margin-bottom: 0.75rem;
+  }
+
+  &__information {
+  }
+
+  &__flag {
+    width: 1rem;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  &__social-link {
+    color: #fff;
+    transition: 0.4s;
+    &:hover {
+      color: var(--first-color);
+    }
+  }
+
+  &__copy {
+    font-size: var(--smaller-font-size);
   }
 }
