@@ -272,6 +272,10 @@ img {
       transform: translateY(-0.25rem);
     }
   }
+
+  &__img {
+    transition: 0.4s;
+  }
 }
 
 /*============== PRODUCTS ===============*/
@@ -402,9 +406,6 @@ img {
     transform: translateX(-5rem);
   }
 
-  &__data {
-  }
-
   &__title,
   &__price {
     font-size: var(--h1-font-size);
@@ -449,6 +450,108 @@ img {
 
     &:hover i {
       transform: translateX(-0.25rem);
+    }
+  }
+}
+
+/*============== LOGO ===============*/
+
+.logo {
+  background-color: #fff;
+  &__container {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    border-top: 1px solid var(--text-color-light);
+    padding-top: 2.5rem;
+  }
+
+  &__img {
+    width: 80px;
+    mix-blend-mode: luminosity;
+    opacity: 0.4;
+    transition: 0.4s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+/*============== BLOG ===============*/
+
+.blog {
+  &__container {
+    padding-bottom: 2rem;
+  }
+
+  &__content {
+    row-gap: 3rem;
+  }
+
+  &__card {
+  }
+
+  &__image {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+
+  &__img {
+    border-radius: 0.5rem;
+  }
+
+  &__button {
+    display: inline-flex;
+    background-color: #fff;
+    padding: 1.15rem;
+    border-radius: 0.5rem 0 0.5rem 0;
+    font-size: 2rem;
+    color: var(--title-color);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    & i {
+      transform: rotate(-30deg);
+      transition: 0.4s;
+    }
+
+    &:hover i {
+      transform: rotate(-30deg) translate(0.25rem);
+    }
+  }
+
+  &__data {
+  }
+
+  &__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: 0.75rem;
+  }
+
+  &__description {
+    margin-bottom: 1.5rem;
+  }
+
+  &__footer,
+  &__reaction {
+    display: flex;
+    align-items: center;
+  }
+
+  &__footer {
+    column-gap: 1.5rem;
+  }
+
+  &__reaction {
+    column-gap: 0.25rem;
+    i {
+      font-size: 1.25rem;
+    }
+    span {
+      font-size: var(--small-font-size);
     }
   }
 }
