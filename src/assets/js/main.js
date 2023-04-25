@@ -1,5 +1,8 @@
 //= components/scrollHeader.js
 //= components/mixitup.min.js
+//= components/scrollUp.js
+//= components/scrollSectionActiveLink.js
+//= components/loader.js
 
 /* ================ SHOW MENU ==================*/
 
@@ -48,8 +51,10 @@ mixerProducts.filter(".delicacies");
 const linkProducts = document.querySelectorAll(".products__item");
 
 function activeProducts() {
-  linkProducts.forEach(p => p.classList.remove('active-product'))
-  this.classList.add('active-product')
+  linkProducts.forEach((p) => p.classList.remove("active-product"));
+  this.classList.add("active-product");
 }
 
-linkProducts.forEach(p => p.addEventListener('click', activeProducts))
+linkProducts.forEach((p) => p.addEventListener("click", activeProducts));
+
+

@@ -15,6 +15,10 @@
   <body>
     
     <div class="wrapper">
+      <div class="load" id="load">
+        <img src="assets/images/loadcoffee.gif" alt="" class="load__gif" />
+      </div>
+    
       <header class="header" id="header">
         <nav class="nav container">
           <a href="#" class="nav__logo">
@@ -24,7 +28,7 @@
           <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="#home" class="nav__link">Home</a>
+                <a href="#home" class="nav__link active-link">Home</a>
               </li>
               <li class="nav__item">
                 <a href="#products" class="nav__link">Products</a>
@@ -33,7 +37,7 @@
                 <a href="#premium" class="nav__link">Premium</a>
               </li>
               <li class="nav__item">
-                <a href="#blod" class="nav__link">Blog</a>
+                <a href="#blog" class="nav__link">Blog</a>
               </li>
             </ul>
     
@@ -93,7 +97,7 @@
             </div>
     
             <div class="specialty__category">
-              <div class="specialty__group">
+              <div class="specialty__group specialty__line">
                 <img
                   src="assets/images/specialty1.png"
                   alt=""
@@ -105,7 +109,7 @@
                   We select the best premium coffee, for a true taste.
                 </p>
               </div>
-              <div class="specialty__group">
+              <div class="specialty__group specialty__line">
                 <img
                   src="assets/images/specialty2.png"
                   alt=""
@@ -493,8 +497,12 @@
               <p class="footer__information">
                 9876 Hacienda Av. <br />
                 Lima, La Libertad 123, Perú
+                <img
+                  src="assets/images/footerflag.png"
+                  alt=""
+                  class="footer__flag"
+                />
               </p>
-              <img src="assets/images/footerflag.png" alt="" class="footer__flag" />
             </div>
             <div class="footer__data">
               <h2 class="footer__subtitle">Contact</h2>
@@ -526,7 +534,10 @@
                 class="footer__social-link"
                 ><i class="bx bxl-instagram"></i
               ></a>
-              <a href="https://twitter.com/" target="_blank" class="footer__social-link"
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="footer__social-link"
                 ><i class="bx bxl-twitter"></i
               ></a>
             </ul>
@@ -537,6 +548,10 @@
           </div>
         </div>
       </footer>
+    
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt"></i>
+      </a>
     </div>
     
     <script src="../../assets/js/main.js"></script>
